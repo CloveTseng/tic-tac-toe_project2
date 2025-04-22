@@ -77,7 +77,7 @@ function App() {
     <div className="container">
       <div className="flex justify-center items-center mt-20">
         <div className="flex flex-col">
-          <h2 className="text-xl mb-4"><img src="/favicon.png" alt="logo" className='w-10 h-10 inline-block me-1' />{status}</h2>
+          <h2 className="text-xl mb-4"><img src={`${import.meta.env.BASE_URL}favicon.png`} alt="logo" className='w-10 h-10 inline-block me-1' />{status}</h2>
           <div className="flex">
             <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
             <Square value={squares[1]} onSquareClick={() => handleClick(1)} />
